@@ -32,22 +32,22 @@ const AboutData = [
 export default function About() {
     return (
         <Container>
-            <div className="space-y-10 ">
-                <div className="flex items-center justify-evenly ">
+            <div className="space-y-14 ">
+                <div className="flex flex-col sm:flex-row items-center  justify-around ">
                     {
                         AboutData.slice(0, 2).map((item, index) => (
                             <Card key={index} title={item.title} description={item.description} image={item.image} />
                         ))
                     }
                 </div>
-                <div className="flex items-center justify-evenly  ">
+                <div className="flex flex-col sm:flex-row items-center  justify-around  ">
                     {
                         AboutData.slice(2, 4).map((item, index) => (
                             <Card key={index} title={item.title} description={item.description} image={item.image} />
                         ))
                     }
                 </div>
-                <div className="flex items-center justify-around  ">
+                <div className="flex md:pl-32  ">
                     <Button variant='contained' className='linear-bg capitalize ' sx={{
                         height: "2.5rem",
                         width: "10rem",
@@ -61,7 +61,6 @@ export default function About() {
                     <div className=""></div>
                 </div>
             </div>
-
         </Container>
     )
 }

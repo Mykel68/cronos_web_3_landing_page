@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <Service />
       <TheHeart />
-      {/* <About /> */}
+      <About />
       <Stacking />
       <Feature />
       <TrustedValue />
