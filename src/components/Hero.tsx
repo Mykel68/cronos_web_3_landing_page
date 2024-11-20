@@ -5,7 +5,7 @@ import Octa from "@/assets/octagon.svg";
 
 export default function Hero() {
     return (
-        <Container className="relative py-20 pb-60">
+        <Container className="relative py-20 pb-60 ">
             {/* Background Octagon */}
             <Image
                 src={Octa}

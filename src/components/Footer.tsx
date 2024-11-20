@@ -1,6 +1,6 @@
-import { ArrowUpRight } from 'lucide-react'
-import { Input } from "@/components/ui/input"
-import Link from "next/link"
+import { ArrowUpRight } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import Link from "next/link";
 
 export default function Footer() {
     const navigation = {
@@ -51,17 +51,17 @@ export default function Footer() {
                 { name: "Resources", href: "#" },
             ],
         },
-    }
+    };
 
     return (
-        <footer className="text-white">
+        <footer className="text-white ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
                 {/* Newsletter Section */}
-                <div className="mb-20 flex items-center justify-center">
-                    <div className="grid grid-cols-2 place-content-center gap-5  ">
+                <div className="mb-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-2  items-center">
                         <div>
                             <h2 className="text-2xl font-semibold mb-2">Receive transmissions</h2>
-                            <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+                            <div className="flex flex-wrap items-center gap-2 text-sm text-gray-400 mb-4">
                                 <span>Unsubscribe at any time.</span>
                                 <Link
                                     href="#"
@@ -72,18 +72,20 @@ export default function Footer() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center">
                             <Input
                                 type="email"
                                 placeholder="Your email"
-                                className="bg-zinc-900 border-zinc-800 text-white w-full max-w-sm focus:ring-zinc-700"
+                                className="bg-zinc-900 border-zinc-800 text-white w-full max-w-md focus:ring-zinc-700"
                             />
                         </div>
                     </div>
                 </div>
 
+                {/* Divider */}
+                <hr className="border-gray-700" />
+
                 {/* Navigation Grid */}
-                <hr className='border-gray-700  mx-auto' />
                 <div className="grid grid-cols-2 pt-14 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12">
                     {Object.values(navigation).map((section) => (
                         <div key={section.title}>
@@ -105,5 +107,5 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
-    )
+    );
 }

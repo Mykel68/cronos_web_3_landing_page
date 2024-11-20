@@ -29,18 +29,16 @@ export default function Network() {
         <div className="w-full text-white py-20">
             <Container >
                 <Typography
-                    variant="h2"
-                    component="h2"
+                    variant="h1"
+                    component="h1"
                     sx={{
                         fontSize: { xs: '2.5rem', md: '3.5rem' },
                         fontWeight: 'bold',
                         mb: 8,
-                        "& .gray": {
-                            color: 'grey.500'
-                        }
+
                     }}
                 >
-                    Join the <span className="gray">network.</span>
+                    Join the network.
                 </Typography>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

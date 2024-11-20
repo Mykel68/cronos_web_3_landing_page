@@ -6,11 +6,11 @@ import Spiral from "@/assets/spiral_.svg";
 
 export default function Service() {
     return (
-        <div className="w-full min-h-screen overflow-hidden relative">
+        <Container className="w-full min-h-screen overflow-hidden  relative">
             {/* Background Spiral */}
             <Image
                 src={Spiral}
-                className="-z-10 absolute w-[300px] sm:w-[400px] h-auto -left-28 top-1/3 -translate-y-1/2"
+                className="-z-10 absolute w-[300px] sm:w-[400px] h-auto left-0 top-1/2 -translate-y-1/2"
                 alt="spiral"
             />
 
@@ -74,6 +74,6 @@ export default function Service() {
                     </div>
                 </div>
             </Container>
-        </div>
+        </Container>
     );
 }

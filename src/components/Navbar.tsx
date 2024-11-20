@@ -20,9 +20,27 @@ export default function Navbar() {
         <Container component="nav" className="bg-[#050505] text-white">
             <div className="flex items-center justify-between py-4">
                 {/* Logo */}
-                <Link href="/" className="font-bold text-xl">
+
+
+                {/* <Link href="/" className={`font-bold text-xl ${isOpen ? " hidden" : ""}`}>
                     CRONOS
-                </Link>
+                </Link> */}
+
+                {
+                    isOpen ?
+                        (
+                            <Link href="/" className={`font-bold text-xl `}>
+                                {""}
+                            </Link>
+                        )
+                        :
+                        (
+                            <Link href="/" className={`font-bold text-xl ${isOpen ? " hidden" : ""}`}>
+                                CRONOS
+                            </Link>
+                        )
+                }
+
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex space-x-5">

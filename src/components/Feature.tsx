@@ -1,20 +1,19 @@
-import { ArrowRight } from 'lucide-react'
-import Image from "next/image"
-import Link from "next/link"
-import Secure from "@/assets/secure1.svg"
-import Yen from "@/assets/yen.svg"
-import Eth from "@/assets/eth.svg"
-import { Container } from '@mui/material'
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import Secure from "@/assets/secure1.svg";
+import Yen from "@/assets/yen.svg";
+import Eth from "@/assets/eth.svg";
+import { Container } from "@mui/material";
 
 export default function Component() {
     return (
-        <Container className="w-full  text-white py-16">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Container className="w-full text-white py-16">
+            <div className="max-w-6xl mx-auto px-4 ">
                 {/* Header */}
-                <div className="space-y-4 w-3/4 mb-12">
-                    <h1 className="text-5xl  text-balance font-bold leading-tight">
-                        Be Part of the Open{" "}
-                        Economy of the Future.
+                <div className="space-y-4 w-full lg:w-3/4 mb-12 text-center lg:text-left">
+                    <h1 className="text-3xl sm:text-5xl font-bold leading-tight">
+                        Be Part of the Open Economy of the Future.
                     </h1>
                     <Link
                         href="#features"
@@ -25,13 +24,13 @@ export default function Component() {
                 </div>
 
                 {/* Features Grid */}
-                <div className="flex  gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {/* Interchain Accounts */}
-                    <div className="bg-gradient-to-br w-[450px]  space-y-14  from-zinc-900 to-zinc-800 rounded-lg p-6 row-span-2">
-                        <div className="text-xs text-gray-500 uppercase tracking-wider mb-4">
+                    <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-lg p-6 space-y-6">
+                        <div className="text-xs text-gray-500 uppercase tracking-wider">
                             INTERCHAIN ACCOUNTS
                         </div>
-                        <div className="relative h-fit mb-2">
+                        <div className="relative h-fit mx-auto lg:mx-0">
                             <Image
                                 src={Secure}
                                 alt="Secure vault illustration"
@@ -40,7 +39,7 @@ export default function Component() {
                                 className="object-contain"
                             />
                         </div>
-                        <h1 className="text-3xl  w-3/4 font-bold mb-2">
+                        <h1 className="text-xl sm:text-3xl font-bold">
                             One secure account for all your digital assets.
                         </h1>
                         <p className="text-xs text-gray-500 uppercase tracking-wider">
@@ -48,40 +47,38 @@ export default function Component() {
                         </p>
                     </div>
 
-                    {/* Decentralized Exchange */}
-                    <div className="space-y-5 flex-1">
-                        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-lg p-6">
-                            <div className="text-xs text-gray-500 uppercase tracking-wider mb-4">
+                    {/* Right Section */}
+                    <div className="space-y-6">
+                        {/* Decentralized Exchange */}
+                        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-lg p-6 space-y-4">
+                            <div className="text-xs text-gray-500 uppercase tracking-wider">
                                 DECENTRALIZED EXCHANGE
                             </div>
-
-                            <div className="flex items-center ">
-                                <h1 className="text-4xl text-balance w-[220px] font-bold mb-2">
+                            <div className="flex flex-col-reverse sm:flex-row items-center gap-4">
+                                <h1 className="text-xl sm:text-4xl font-bold text-center sm:text-left">
                                     Swap tokens & collectibles.
                                 </h1>
-                                <div className="relative h-fit mb-4 flex-1">
-                                    <Image
-                                        src={Yen}
-                                        alt="Golden coin illustration"
-                                        width={200}
-                                        height={200}
-                                        className="object-contain"
-                                    />
-                                </div>
+                                <Image
+                                    src={Yen}
+                                    alt="Golden coin illustration"
+                                    width={150}
+                                    height={150}
+                                    className="object-contain"
+                                />
                             </div>
-
                             <p className="text-xs text-gray-500 uppercase tracking-wider">
                                 COMING SOON
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-2 gap-x-4">
+                        {/* Bottom Grid */}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {/* Liquidity Pool */}
-                            <div className="bg-gradient-to-br flex flex-col gap-14 from-zinc-900 to-zinc-800 rounded-lg p-6">
-                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-4">
+                            <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-lg p-6 space-y-4">
+                                <div className="text-xs text-gray-500 uppercase tracking-wider">
                                     LIQUIDITY POOL
                                 </div>
-                                <h1 className="text-4xl font-bold mb-2">
+                                <h1 className="text-xl sm:text-4xl font-bold">
                                     Provide liquidity, earn rewards.
                                 </h1>
                                 <p className="text-xs text-gray-500 uppercase tracking-wider">
@@ -90,11 +87,11 @@ export default function Component() {
                             </div>
 
                             {/* Wrapped ETH */}
-                            <div className="bg-gradient-to-br flex flex-col justify-between from-zinc-900 to-zinc-800 rounded-lg p-6">
-                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-4">
+                            <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-lg p-6 space-y-4">
+                                <div className="text-xs text-gray-500 uppercase tracking-wider">
                                     WRAPPED ETH
                                 </div>
-                                <h3 className="text-6xl font-bold mb-2">
+                                <h3 className="text-3xl sm:text-6xl font-bold">
                                     Eth Included
                                 </h3>
                                 <p className="text-xs text-gray-500 uppercase tracking-wider">
@@ -103,10 +100,8 @@ export default function Component() {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </Container>
-    )
+    );
 }
