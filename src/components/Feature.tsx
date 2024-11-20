@@ -39,7 +39,7 @@ export default function Component() {
                                 className="object-contain"
                             />
                         </div>
-                        <h1 className="text-xl sm:text-3xl font-bold">
+                        <h1 className="text-xl sm:text-3xl font-bold w-2/3">
                             One secure account for all your digital assets.
                         </h1>
                         <p className="text-xs text-gray-500 uppercase tracking-wider">
